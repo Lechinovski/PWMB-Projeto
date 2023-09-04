@@ -1,0 +1,13 @@
+div#page {
+  border:1px solid purple;
+  width:755px;
+  margin:0 auto;
+  padding:5px;
+  text-align:left;
+  position:relative
+}
+div#header {
+  border:2px solid red;
+  width:750px;
+  height:30px;
+}

@@ -1,0 +1,8 @@
+div#page {
+  border:5px solid purple;
+  width:755px;
+  margin:0 auto;
+  padding:5px;
+  text-align:left;
+  position:relative
+}
