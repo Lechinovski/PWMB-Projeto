@@ -1,0 +1,82 @@
+* {
+    box-sizing: border-box; 
+    text-align: center;
+  }
+  body {
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    margin: 0;
+    font-family: monospace;
+    font-size: 16px;
+  }
+  #main {
+    display: flex;
+    flex: 1;
+  }
+  #main > article {
+    flex: 1;
+    order: 1;
+  }
+  #main  nav, 
+  #main  aside {
+    flex:   0 0 20vw;
+  }
+  #main  nav {
+    background: #e40e8b;
+    order: 3;
+
+  }
+   nav li {
+    list-style-type: none;
+  }
+  #main nav a {
+    text-decoration: none;
+    color: #fff;
+    font-weight: bold;
+}
+  #main  aside {
+    background: #cfedec;
+    order: 2;
+  }
+  header {
+    background: #1b9a96;
+    height: 20vh;
+  }
+  header, footer, article, nav, aside {
+    padding: 1em;
+  }
+  /* Estilos para o rodapé */
+footer {
+  background-color: #1b9a96;
+  color: #fff;
+  text-align: center;
+  padding: 10px 0;
+}
+
+.redes-sociais a {
+  color: #fff;
+  text-decoration: none;
+  margin: 0 5px;
+}
+
+.redes-sociais a:hover {
+  text-decoration: underline;
+}
+/*
+----------------------------------------------
+*/
+/* Estilo para o logo */
+header img {
+  max-width: 250px; /* Define o tamanho máximo para o logo */
+}
+/* Estilo para a barra de navegação */
+header nav li,a {
+  display: inline-block; /* Itens na mesma linha */
+  margin-right: 20px; /* Espaçamento direita entre os itens */
+  text-decoration: none;
+  color: #fff;
+    font-weight: bold;
+}
+
+

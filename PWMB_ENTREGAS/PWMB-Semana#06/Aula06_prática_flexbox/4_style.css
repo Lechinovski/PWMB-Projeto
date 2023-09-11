@@ -1,0 +1,41 @@
+/*
+ *-----------------------------------------------------------------* 
+ *                            SENAC - TADS                         *
+ *                           Programação Web                       *
+ * Prof.Veríssimo                                          set/2023* 
+ *-----------------------------------------------------------------* 
+ *  Flexbox: wrap  (Embrulhamento)
+*/
+html {
+  font-family: sans-serif;
+}
+
+body {
+  margin: 0;
+}
+
+header {
+  background: purple;
+  height: 100px;
+}
+
+h1 {
+  text-align: center;
+  color: white;
+  line-height: 100px;
+  margin: 0;
+}
+
+article {
+  flex: 200px;
+  padding: 10px;
+  margin: 10px;
+  background: aqua;
+}
+
+/* Add your flexbox CSS below here */
+
+section {
+  display: flex;
+  flex-flow: row wrap;
+}

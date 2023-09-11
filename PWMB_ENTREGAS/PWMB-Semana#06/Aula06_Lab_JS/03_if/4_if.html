@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comando if-2</title>
+</head>
+<body>
+    <h1>Comando IF-2</h1>
+    <p>Informe o Pais: <input type="text" name="txtpais" id="txtpais"> </p>
+    <input type="button" value="Verificar" onclick="gentilico()">
+    <div id="res"></div>
+    <script>
+        
+        function gentilico() {
+            var txtpais = window.document.querySelector('input#txtpais')
+            var pais = txtpais.value
+            res.innerHTML =`<p>Você Nasceu em  <strong>${pais} </strong></p>`
+            if (pais == 'Brasil'){
+                res.innerHTML +=`<p>Você é  <strong>Brasileiro</strong></p>`
+            } else {
+                res.innerHTML +=`<p>Você é <strong>Estrangeiro</strong></p>` 
+            }
+            
+        }
+    </script>
+</body>
+</html>

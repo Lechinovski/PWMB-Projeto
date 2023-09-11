@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>comando if</title>
+</head>
+<body>
+    <h1>Comando IF</h1>
+    <p>Velocidade do carro: <input type="number" name="txtvel" id="txtvel">Km/h
+    </p>
+    <input type="button" value="Verificar" onclick="calcular()">
+    <div id="res"></div>
+    <script>
+        
+        function calcular() {
+            var txtvel = window.document.querySelector('input#txtvel')
+            var vel = Number(txtvel.value)
+            res.innerHTML =`<p>Sua velocidade atual é de <strong>${vel} </strong>Km/h</p>`
+            if (vel >60){
+                res.innerHTML +=`<p>Você foi <strong>Multado</strong></p>`    
+            }
+            res.innerHTML +=`<p>Dirija sempre com Cinto de segurança</p>`
+        }
+    </script>
+</body>
+</html>
