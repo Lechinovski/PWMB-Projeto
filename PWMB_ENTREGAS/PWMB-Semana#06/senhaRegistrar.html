@@ -4,7 +4,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="stylesheet" href="css/senhaStyle.css">
-    <title>Registro de Usuário</title>
+    <title>Confirmar Senha</title>
 </head>
 <body>
     <header>
@@ -12,16 +12,17 @@
     </header>
     <main>
         <section>
-            <form action="#" method="post">
+            <form action="perfil.html" method="get">
                 <label for="senha">Senha:</label>
                 <input type="password" id="senha" name="senha" required><br>
 
                 <label for="confirmaSenha">Confirme a Senha:</label>
                 <input type="password" id="confirmaSenha" name="confirmaSenha" required><br><br>
 
-                <input type="submit" value="Registrar">
+                <input type="submit" value="Registrar" id="form">
             </form>
         </section>
     </main>
+    <script src="senha.js"></script>
 </body>
 </html>

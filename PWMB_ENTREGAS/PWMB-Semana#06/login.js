@@ -1,5 +1,5 @@
 document.getElementById("loginForm").addEventListener("submit", function(event) {
-  event.preventDefault(); 
+  event.preventDefault();
 
   var emailInput = document.getElementById("email").value;
   var senhaInput = document.getElementById("senha").value;
