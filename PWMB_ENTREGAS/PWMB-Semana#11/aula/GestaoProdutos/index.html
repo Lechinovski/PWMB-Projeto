@@ -1,0 +1,86 @@
+<!DOCTYPE html>
+<html lang="pt-Br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadstro de Produto</title>
+    <link rel="stylesheet" href="css/style.css">
+
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Nunito+Sans&family=Roboto:wght@100&display=swap"
+        rel="stylesheet">
+    <script src="js/script1.js"></script>
+
+</head>
+
+<body>
+    <header>
+        <h1>Loja Virtual</h1>
+    </header>
+    <main>
+        <div class="titulo">
+            <h2>Produtos</h2>
+            <span>Lista de produtos</span>
+        </div>
+        <div class="card">
+            <div class="entrada">
+                <label>Produto</label>
+                <input type="text" id="produto" placeholder="Nome do Produto">
+            </div>
+            <div class="entrada">
+                <label>Preço</label>
+                <input type="text" id="preco" placeholder="Preço do Produto">
+            </div>
+            <button onclick="adiconar">Adicionar produto</button>
+        </div>
+        <div class="content">
+            <table border="1">
+                <thead>
+                    <th class="center">Id</th>
+                    <th class="center">Nome</th>
+                    <th class="center">Preço</th>
+                    <th class="center">Ações</th>
+                </thead>
+                <tbody>
+
+                    <tr>
+                        <td class="center">1</td>
+                        <td>Goiabada Cascao</td>
+                        <td>19.50</td>
+                        <td class="center">
+                            <img src="img/editar.png" alt="">
+                            <img src="img/bin.png" alt="">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="center">2</td>
+                        <td>Queijo Branco</td>
+                        <td>15.5</td>
+                        <td class="center">
+                            <img src="img/editar.png" alt="">
+                            <img src="img/bin.png" alt="">
+
+
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="center">3</td>
+                        <td>Presunto Magro</td>
+                        <td>55.00</td>
+                        <td class="center">
+                            <img src="img/editar.png" alt="">
+                            <img src="img/bin.png" alt="">
+
+
+                        </td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </main>
+
+</body>
+
+</html>

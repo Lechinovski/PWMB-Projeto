@@ -1,0 +1,84 @@
+* {
+    margin: 0;
+}
+
+/* https://fonts.google.com/ -->(Nunito Sans) */
+body {
+    font-family: 'Nunito Sans', sans-serif;
+    background-color: #fafbfc;
+
+}
+
+header {
+    background-color: blueviolet;
+    padding: 10px;
+    color: #fff;
+    text-align: center;
+}
+
+main {
+    padding: 30px 50px;
+}
+
+.card {
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 20px;
+    margin-top: 15px;
+    border-radius: 5px;
+}
+
+.entrada {
+    display: grid;
+    margin-bottom: 15px;
+}
+
+input {
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    outline: 0;
+}
+
+button {
+    border: 0px;
+    padding: 10px;
+    outline: 0;
+    background-color: blueviolet;
+    color: #fff;
+    border-radius: 5px;
+    font-weight: bold;
+    transition: all ease 0.5s;
+}
+
+button:hover {
+    background-color: rgb(74, 7, 140);
+}
+
+.content {
+    margin: 15px;
+
+}
+
+table {
+    border-collapse: collapse;
+    border: 1px solid #ccc;
+    width: 100%;
+}
+
+table th{
+    background-color: #ada5a5;
+    
+}
+table th, td{
+   
+    padding: 1px 5px;
+    text-align: left;
+}
+/* Acessar https://www.flaticon.com/br/icones */
+table td img{
+    width: 22px;
+}
+.center{
+    text-align: center;
+}
