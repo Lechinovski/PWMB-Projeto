@@ -69,10 +69,32 @@ document.addEventListener('DOMContentLoaded', function () {
     document.getElementById("salvar").addEventListener('click', function () {
         const nome = document.getElementById("nom").value;
         const sobrenome = document.getElementById("sob").value;
-        const dadosSalvos = document.getElementById("dados-salvos");
-        const valorFormNomeUsuario = document.getElementById("valor_form_nome_usuario");
-        valorFormNomeUsuario.textContent = nome + " " + sobrenome;
-        dadosSalvos.style.display = "block";
+        const data = document.getElementById("dat").value;
+        const cidade = document.getElementById("cid").value;
+        const uf = document.getElementById("uf").value;
+        const cep = document.getElementById("cep").value;
+        const endereco = document.getElementById("end").value;
+        const numero = document.getElementById("num").value;
+    
+        const valorNome = document.getElementById("valor-nome");
+        const valorSobrenome = document.getElementById("valor-sobrenome");
+        const valorData = document.getElementById("valor-data");
+        const valorCidade = document.getElementById("valor-cidade");
+        const valorUF = document.getElementById("valor-uf");
+        const valorCEP = document.getElementById("valor-cep");
+        const valorEndereco = document.getElementById("valor-endereco");
+        const valorNumero = document.getElementById("valor-numero");
+    
+        valorNome.textContent = nome;
+        valorSobrenome.textContent = sobrenome;
+        valorData.textContent = data;
+        valorCidade.textContent = cidade;
+        valorUF.textContent = uf;
+        valorCEP.textContent = cep;
+        valorEndereco.textContent = endereco;
+        valorNumero.textContent = numero;
     });
+    
+    
 
 });

@@ -10,7 +10,7 @@ form {
     box-shadow: 0px 0px 10px rgba(0, 0, 0, 0.2);
 }
 
-form input[type="submit"] {
+form input[type="button"] {
     width: 100%;
     padding: 10px;
     background-color: rgb(57, 57, 226);
@@ -40,3 +40,28 @@ select {
     padding: 5px;
     margin: 5px 0;
 }
+
+table {
+    width: 80%;
+    border-collapse: separate;
+    border-spacing: 0;
+    background-color: #fff;
+    border: 1px solid #e0e0e0;
+    margin: 0 auto;
+    border-radius: 5px;
+    margin-top: 20px; /* Add some spacing between the form and the table */
+  }
+  
+  th {
+    background-color: #333;
+    color: #fff;
+    text-align: left;
+    padding: 8px;
+    border: 1px solid #444;
+  }
+
+  td {
+    padding: 8px;
+    border: 1px solid #e0e0e0;
+    color: #333;
+  }
