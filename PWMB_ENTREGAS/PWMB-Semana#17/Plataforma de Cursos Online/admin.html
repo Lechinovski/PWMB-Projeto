@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Usuários Cadastrados</title>
+    <style>
+        body {
+            display: flex;
+            flex-direction: column;
+            min-height: 100vh;
+            margin: 0;
+            padding: 0;
+            font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+            background-color: #c2c2c2;
+        }
+
+        header {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+            color: black;
+            padding: 20px;
+            background-color: #c2c2c2;
+            box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+        }
+
+        header h1 {
+            margin: 0 auto;
+        }
+
+        main {
+            width: 80%;
+            max-width: 600px;
+            margin: auto; /* Centraliza o main na tela */
+            padding: 20px;
+            background-color: #fff;
+            box-shadow: 0 2px 8px rgba(0, 0, 0, 0.2);
+            border-radius: 8px;
+            display: flex;
+            flex-direction: column;
+            align-items: center; /* Centraliza conteúdo verticalmente */
+        }
+
+        section {
+            margin-bottom: 20px;
+            text-align: left;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+            margin-top: 20px;
+        }
+
+        th,
+        td {
+            border: 1px solid #ddd;
+            padding: 8px;
+            text-align: left;
+        }
+
+        th {
+            background-color: #f2f2f2;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        <h1>Usuários Cadastrados</h1>
+    </header>
+
+    <main>
+        <table id="tabela-usuarios">
+            <thead>
+                <tr>
+                    <th>Nome</th>
+                    <th>CPF</th>
+                    <th>Email</th>
+                    <th>Telefone</th>
+                </tr>
+            </thead>
+            <tbody>
+                <!-- Dados da tabela serão inseridos aqui -->
+            </tbody>
+        </table>
+    </main>
+
+    <script>
+        // Recupera os dados do localStorage
+        var usuariosJSON = localStorage.getItem('usuario');
+        var tabelaUsuarios = document.getElementById('tabela-usuarios');
+        var tbody = tabelaUsuarios.getElementsByTagName('tbody')[0];
+
+        // Verifica se existem usuários no localStorage
+        if (usuariosJSON) {
+            var usuarios = JSON.parse(usuariosJSON);
+
+            // Para cada usuário, cria uma nova linha na tabela
+            usuarios.forEach(function (usuario) {
+                var row = tbody.insertRow();
+                var nomeCell = row.insertCell(0);
+                var cpfCell = row.insertCell(1);
+                var emailCell = row.insertCell(2);
+                var telefoneCell = row.insertCell(3);
+
+                nomeCell.textContent = usuario.nome;
+                cpfCell.textContent = usuario.cpf;
+                emailCell.textContent = usuario.email;
+                telefoneCell.textContent = usuario.telefone;
+            });
+        }
+    </script>
+</body>
+
+</html>
