@@ -1,0 +1,31 @@
+#-----------------------------------------------------------#
+#                        QUESTÃO #03                        #
+#-----------------------------------------------------------#
+
+===================================================================
+      Seu R.A: 1142741065
+
+      Seu Nome: João Vitor Lechinovski Teixeira
+
+===================================================================
+
+
+var produto = {
+  nome: "Notebook",
+  preco: 2499.99,
+  estoque: 15,
+  categoria: "Eletrônicos",
+};
+
+produto.preco = 2799.99;
+
+produto.estoque -= 3;
+
+produto.disponivel = produto.estoque > 0;
+
+console.log("Informações atualizadas do produto:");
+console.log("Nome:", produto.nome);
+console.log("Preço:", produto.preco);
+console.log("Estoque:", produto.estoque);
+console.log("Categoria:", produto.categoria);
+console.log("Disponível:", produto.disponivel);

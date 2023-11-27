@@ -1,0 +1,64 @@
+#-----------------------------------------------------------#
+#                        QUESTÃO #01                        #
+#-----------------------------------------------------------#
+
+===================================================================
+      Seu R.A: 1142741065
+
+      Seu Nome: João Vitor Lechinovski Teixeira
+
+===================================================================
+
+
+Titulo do sistema: 
+
+NoteFix
+
+
+Breve descrição problema central: 
+
+A NoteFix oferece serviços de reparo, manutenção e suporte técnico para notebooks utilizando 
+planilhas eletrônicas que torna o gerenciamento e a comunicação com o cliente menos 
+eficientes necessitando criar um sistema web que otimize o registro de clientes, acompanhar serviços, 
+orçamentação e permita aos clientes o acesso online para verificar o status de reparo de seus notebooks.
+ 
+
+Breve descrição técnica da solução:
+
+A solução é desenvolver um sistema web utilizando as tecnologias HTML, CSS e JavaScript tendo uma interface intuitiva 
+para facilitar o registro de clientes, o acompanhamento do status de reparo e a interação cliente-assistência técnica.
+
+
+Lista dos requisitos identificados, que devem ser parte do sistema:
+
+Registro de Clientes como nome, endereço, número de telefone e endereço de e-mail. 
+
+Registro de Equipamentos como modelo, número de série e uma breve descrição do problema.
+
+Orçamentação passao para o cliente como os itens a ser consertados e descrição, o custo estimado do reparo e o tempo necessário para conclusão. 
+
+Aprovação do Orçamento notificação ao cliente. 
+
+Reparo acompanhamento do status de reparo. 
+
+Suporte Pós-Reparo uma garantia para as peças substituídas e o serviço realizado. 
+
+Portal do Cliente.
+
+
+Taxonomia das funcionalidades (utilizar indentação) que serão implementadas no 
+sistema:
+
+Registro de Clientes cadastrando novos clientes e atualização de dados de clientes.
+
+Registro de Equipamentos novos equipamentos ao cliente e atualização de informações de equipamentos.
+
+Orçamentação geração automática de orçamento e notificação automática ao cliente.
+
+Aprovação do Orçamento sistema de aprovação online pelo cliente.
+
+Reparo acompanhamento do status de reparo.
+        
+Suporte Pós-Reparo relato de problemas adicionais concessão de garantia.
+
+Portal do Cliente login, dashboard com status de reparo e notificações e atualizações em tempo real.

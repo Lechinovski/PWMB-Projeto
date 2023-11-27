@@ -1,0 +1,23 @@
+#-----------------------------------------------------------#
+#                        QUESTÃO #02                        #
+#-----------------------------------------------------------#
+
+===================================================================
+      Seu R.A: 1142741065
+
+      Seu Nome: João Vitor Lechinovski Teixeira
+
+===================================================================
+
+
+function validarComentario(comentario) {
+  const regexComentario = /^@([a-zA-Z0-9]{3,}): (.+)$/;
+  const teste = comentario.match(regexComentario);
+
+  if (teste && teste[1]) {
+    console.log("nomeUsuario:", teste[1]);
+    console.log("conteudo:", teste[2]);
+  } else {
+    console.log("Nome do usuário possui caracteres inválidos");
+  }
+}
